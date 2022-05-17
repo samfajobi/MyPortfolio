@@ -100,7 +100,7 @@ const Navbar = () => {
 
 
   return (
-    <Container ref={Home} >
+    <Container ref={Home} id="Home">
       <Wrapper>
         <Left>
           <DevName>Sam<Span>_Fajobi</Span></DevName>

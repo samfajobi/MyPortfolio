@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import LanguageIcon from '@material-ui/icons/Language';
+
+
 
 
 
@@ -26,66 +27,42 @@ const ProjTitle = styled.h1`
 const ProjTitle2 = styled.div`
   text-align: center;
 `
-const ProjInfo = styled.div`
-  opacity: 3;
-  background: blue;
-  postion: relative;
 
-`
 const Projects = styled.div`
   display: flex;
   margin-top: 50px;
   align-items: center;
   cursor: pointer;
-
-  &:hover ${ProjInfo} {
-      opacity: 1;
-
-  }
- 
-`
-const Image = styled.img`
-  width: 330px;
-
-  &:hover ${ProjInfo} {
-      opacity: 0.8;
-      
-      transition: all 1.1s ease;
-      color: linear-gradient(
-          rgba( 200, 255, 255, 0.5),
-          rgba( 200, 255, 255, 0.6)
-      );
-      transform: scale(1.08);
-  }
  
 `
 
 
-const Project1 = styled.div`
-  flex: 1;
-  color: blue;
+const ProjectCard1 = styled.div`
+  border: 1px solid black;
+  width: 300px;
+`
 
-  &:hover {
-      background-color: ligthgray;
-  }
+const ProjectCard
+const ProjectImg = styled.div`
   
 `
-const Project2 = styled.div`
-  flex: 1;
-`
-const Project3 = styled.div`
-  flex: 1;
+
+const Image = styled.img`
+  width: 300px;
 `
 
-
-const ProjDesc = styled.div`
+const ProjectName = styled.h2`
 `
+const ProjectDesc = styled.p`
+  text-align: justify;
+`
+
 const ProjIcons = styled.div`
 `
-const GithubIcon = styled.div`
-`
-const WebICon = styled.div`
-`
+
+const GitHub = styled.div``
+
+const WebIcon = styled.div``
 
 
 
@@ -100,23 +77,53 @@ const ProjectSec = (props) => {
             <ProjTitle>My Works</ProjTitle>
             <ProjTitle2>Here are some of my projects i developed from skills learnt</ProjTitle2>
             <Projects>
-                <Project1>
-                    <Image src='/images/Project1.png'/>
-                </Project1>
-                <Project2>
-                   <Image src='/images/Project1.png'/>
-                </Project2>
-                <Project3>
-                  <Image src='/images/Project1.png'/>
-                </Project3>
-            </Projects>
-            <ProjInfo>
-                <ProjDesc></ProjDesc>
+              <ProjectCard1>
+                <ProjectImg>
+                  <Image src="/images/Project1.png" />
+                </ProjectImg>
+                <ProjectName>E-commerce Website</ProjectName>
+                <ProjectDesc>
+                    An E-commerce website built with react.js, node.js, express.js
+                    and mongodb as a database.
+                </ProjectDesc>
                 <ProjIcons>
-                    <GithubIcon><GitHubIcon /></GithubIcon>
-                    <WebICon><LanguageIcon /></WebICon>
+                <GitHub><GitHubIcon/></GitHub>
+                <WebIcon></WebIcon>
                 </ProjIcons>
-            </ProjInfo>
+              </ProjectCard1>
+
+              <ProjectCard2>
+                <ProjectImg>
+                  <Image src="/images/Project1.png" />
+                </ProjectImg>
+                <ProjectName>E-commerce Website</ProjectName>
+                <ProjectDesc>
+                    An E-commerce website built with react.js, node.js, express.js
+                    and mongodb as a database.
+                </ProjectDesc>
+                <ProjIcons>
+                <GitHub><GitHubIcon/></GitHub>
+                <WebIcon></WebIcon>
+                </ProjIcons>
+              </ProjectCard2>
+
+              <ProjectCard3>
+                <ProjectImg>
+                  <Image src="/images/Project1.png" />
+                </ProjectImg>
+                <ProjectName>E-commerce Website</ProjectName>
+                <ProjectDesc>
+                    An E-commerce website built with react.js, node.js, express.js
+                    and mongodb as a database.
+                </ProjectDesc>
+                <ProjIcons>
+                <GitHub><GitHubIcon/></GitHub>
+                <WebIcon></WebIcon>
+                </ProjIcons>
+              </ProjectCard3>
+      
+            </Projects>
+            
         </Wrapper>
     </Container>
   )

@@ -18,15 +18,15 @@ app.get("/test", ( req, res ) => {
 app.post("/api/form", ( req, res ) => {
     console.log(req.body)
 
-    res.send("Welcome")
+    
 
     let data = req.body
 
     let transporter = nodemailer.createTransport({
-        service: Gmail,
-        port: 465,
+        service: "smtp.mailtrap.io",
+        port: 2525,
         auth: {
-            user: process.env.emailAddress,
+            user: process.env.username,
             pass: process.env.password
         }
 
@@ -42,17 +42,17 @@ app.post("/api/form", ( req, res ) => {
           <ul>
             <li>Name: ${data.name}</li>
             <li>Email: ${data.email}</li>
-            <li>PhoneNo: ${data.number}</li>
+            <li>PhoneNo: ${data.number}</li> 
             <li>Message: ${data.message}</li>
           </ul>
-        `
+        ` 
     }
-
+                 
     transporter.sendMail( mailOptions, (error, response) => {
         if( error ) {
-            res.send("Your Message has been Successfully Sent")
+            console.log("Your Message has been Successfully Sent")
         } else {
-            res.send("Your Message has been sent Successfully")
+            console.log("Your Message has been sent Successfully")
         }
 
     }) 
@@ -61,6 +61,7 @@ app.post("/api/form", ( req, res ) => {
 
     
 })
+
 
 
 

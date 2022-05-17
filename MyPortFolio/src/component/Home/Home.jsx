@@ -7,8 +7,8 @@ const Home = () => {
       
      <HomeSection />
        
-    </div>
+    </div> 
   )
 }
 
-export default Home;
+export default Home;  

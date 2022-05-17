@@ -11,6 +11,7 @@ import GitHub from '@material-ui/icons/GitHub';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { useRef } from 'react';
+//import { HashLink as Link } from "react-router-hash-link";
 
 
 
@@ -131,7 +132,7 @@ const Span = styled.span`
 const Title = styled.h3`
   margin: 20px 0px;
 `
-const ResumeLink = styled.a`
+const ResumeLink = styled.button`
   padding: 10px 30px;
   background-color: black;
   color: white;
