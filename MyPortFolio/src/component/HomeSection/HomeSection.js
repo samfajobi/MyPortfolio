@@ -59,7 +59,7 @@ const LeftSideIcons = styled.div`
   position: absolute;
   left: 0;
   bottom: 0;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-bottom: 10%;
   
 `
@@ -86,8 +86,8 @@ const RightContent = styled.div`
    position: absolute;
    bottom: 0;
    right: 0;
-   margin-right: 65px; 
-   width: 3px;
+   margin-right: 4.25%; 
+   width: 3px;      
    height: 21%;
    background-color: black;
   
@@ -204,7 +204,7 @@ const HomeSection = () => {
               <Icon><GitHub /></Icon>
             </A>  
          </LeftSideIcons>
-         <Content></Content>
+         {/* <Content></Content> */}
           <Hi>Hi, </Hi>
           <Name>I'm Sam<Span>_Fajobi</Span></Name>
           <Title>
