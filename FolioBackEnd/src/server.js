@@ -64,6 +64,17 @@ app.post("/api/form", ( req, res ) => {
 
 
 
+if ( process.env.NODE_ENV === "production") {
+    // Set Static Folder
+   // app.use(express.static(path.join(""))) OR
+    app.use(express.static(path.join(__dirname, "/frontend/build")))
+
+    app.use("*", (req, res) => {
+        req.sendFile(path.join(__dirname, "/frontEnd/build", "index.html" ))
+
+    })
+}
+
 
 const port = 4000;
 

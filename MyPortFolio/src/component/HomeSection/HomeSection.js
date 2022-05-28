@@ -117,6 +117,7 @@ const Icon = styled.div`
 
 
 
+
 const Hi = styled.h1`
   font-size: 55px;
   margin-bottom: 10px
@@ -245,7 +246,7 @@ const HomeSection = () => {
             <Icon><TwitterIcon/></Icon>
           </A>
         </RightSideIcon>
-        <RightContent></RightContent>
+        
         <ImageContainer>
           <Image src="/images/MyImg2a.png"/ >
         </ImageContainer>
