@@ -146,7 +146,8 @@ const Contact = () => {
   then( (response) => {
     setSent(true)
     
-  }).catch( () => {
+  }).catch( (err) => {
+    console.log(err)
     console.log("Your form has not been processed")
   })
 
