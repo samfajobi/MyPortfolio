@@ -6,6 +6,7 @@ import Contact from "./component/Contact/Contact"
 import Footer from "./component/Footer/Footer"
 import SkillsSection from "./component/SkillsSection/SkillsSection"
 import ServiceTools from "./component/ServiceToolsSec/ServiceToolsSec"
+import DehazeIcon from '@material-ui/icons/Dehaze';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import { useRef }   from 'react';
 
@@ -50,6 +51,10 @@ const Center = styled.div`
   flex: 1;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 580px) {
+    display: none;
+  }
   
   
   
@@ -62,6 +67,12 @@ const Right = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-right: 20px;
+
+  @media screen and (max-width: 580px) {
+    margin-right: 90px;
+    
+  }
+  
   
   
 `
@@ -71,6 +82,15 @@ const DarkModeIcon = styled.div`
   cursor: pointer;
   
 
+`
+
+const ToggleIcon = styled.div`
+  margin-top: 7px;
+  margin-left: 40px;
+  margin-right: 20px;
+  @media screen and (min-width: 580px) {
+    display: none;
+  }
 `
 
 const Ul = styled.ul`
@@ -135,6 +155,7 @@ const App = () => {
           <Right>
             <DarkModeIcon><Brightness4Icon /></DarkModeIcon>
           </Right>
+          <ToggleIcon>< DehazeIcon /></ToggleIcon>
         </Wrapper>
      </Container>
      

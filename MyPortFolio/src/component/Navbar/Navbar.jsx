@@ -38,11 +38,15 @@ const Center = styled.div`
   flex: 1;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 580px) {
+    display: none;
+  }
   
   
   
-`
- 
+`     
+       
 
 const Right = styled.div`
   display: flex;
@@ -50,6 +54,8 @@ const Right = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-right: 20px;
+
+ 
   
   
 `
@@ -64,6 +70,10 @@ const DarkModeIcon = styled.div`
 const Ul = styled.ul`
   display: flex;
   text-align: center;
+
+  @media screen and (max-width: 580px) {
+    display: none;
+  }
   
   
 `
