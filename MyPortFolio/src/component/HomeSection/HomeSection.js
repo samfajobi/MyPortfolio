@@ -37,15 +37,12 @@ const Image = styled.img`
   height: 980px;
   margin-bottom: 50%;
   margin-right: 25%;
- 
-  
-  transition:  left 1s;
-  
-  &hover: {
-    left: 30px;
 
-
+  @media screen and (max-width: 580px) {
+    
+    
   }
+ 
  
 `
 
@@ -53,6 +50,12 @@ const ProfileInfo = styled.div`
   flex: 1;
   margin-bottom: 7%;
   margin-left: 15%;
+
+  @media screen and (max-width: 580px) {
+    margin-left: 10%;
+   
+
+  }
 `
 
 const LeftSideIcons = styled.div`
@@ -99,6 +102,10 @@ const RightSideIcon = styled.div`
   bottom: 0;
   margin-right: 3%;
   margin-bottom: 10%;
+
+  @media screen and (max-width: 580px) {
+    
+  }
   
 `
 
@@ -120,11 +127,20 @@ const Icon = styled.div`
 
 const Hi = styled.h1`
   font-size: 55px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 580px) {
+    font-size: 33px;
+  }
 `
 
 const Name = styled.h1`
   font-size: 45px;
+
+  @media screen and (max-width: 580px) {
+    font-size: 25px;
+  }
+
 `
 
 const Span = styled.span`
@@ -145,6 +161,12 @@ const ResumeLink = styled.button`
 
   &:hover{
     color: #70B4AE;
+  }
+
+  @media screen and (max-width: 580px) {
+    padding: 7px 10px;
+    font-size: 14px;
+
   }
 
 `
