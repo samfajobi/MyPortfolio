@@ -19,7 +19,11 @@ const Wrapper = styled.div`
 const ImgContainer = styled.div`
   
   width: 45%;
-`
+
+  @media screen and (max-width: 580px) {
+    flex: 1;
+  }
+ `
 const Image = styled.img`
   width: 80%;
   height: 400px;
@@ -29,7 +33,11 @@ const Image = styled.img`
 const InfoContainer = styled.div`
   
   text-align: justify;
-  width: 60%;
+  width: 50%;
+  
+  @media screen and (max-width: 580px) {
+    flex: 1;
+  }
   
 `
 

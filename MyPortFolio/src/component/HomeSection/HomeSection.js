@@ -64,6 +64,11 @@ const LeftSideIcons = styled.div`
   bottom: 0;
   margin-left: 30px;
   margin-bottom: 10%;
+
+  @media screen and (max-width: 580px) {
+    display: none;
+
+  }
   
 `
 const A = styled.a`
@@ -104,7 +109,8 @@ const RightSideIcon = styled.div`
   margin-bottom: 10%;
 
   @media screen and (max-width: 580px) {
-    
+    display: none;
+
   }
   
 `
@@ -187,6 +193,10 @@ const NavIcons = styled.div`
   opacity: 0.7;
   justify-content: space-between;
   padding: 0px 25px;
+
+  @media screen and (max-width: 580px) {
+    width: 40%;
+  }
   
 `
 

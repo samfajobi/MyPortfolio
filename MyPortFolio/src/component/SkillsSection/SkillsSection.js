@@ -13,6 +13,9 @@ const Wrapper = styled.div`
   margin: 60px 90px;
   text-align: center;
   
+
+  
+ 
 `
 
 const SkillsTitle = styled.h1`
@@ -29,20 +32,48 @@ const Desc = styled.p`
 const Icons = styled.div`
   display: flex;
   margin: 30px 0px;
+
+  @media screen and (max-width: 580px) {
+    padding: 0px 15px;
+    margin-right: 60px;
+   
+  }
+
 `
 const Image = styled.img``
 const IconName = styled.div``
 const Icon1 = styled.div`
   flex: 1;
+
+  @media screen and (max-width: 580px) {
+    padding-right: 35px;
+   
+  }
+
 `
 const Icon2 = styled.div`
   flex: 1; 
+  
+  @media screen and (max-width: 580px) {
+    margin-right: 35px;
+   
+  }
 `
 const Icon3 = styled.div`
   flex: 1;
+  
+  @media screen and (max-width: 580px) {
+    padding-right: 35px;
+   
+  }
 `
 const Icon4 = styled.div`
   flex: 1;
+  
+  @media screen and (max-width: 580px) {
+    margin-right: 35px;
+   
+  }
 `
 
 

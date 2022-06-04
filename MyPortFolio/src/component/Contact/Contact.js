@@ -13,6 +13,11 @@ const Container = styled.div`
   height: 540px;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 580px) {
+    height: 840px;
+   
+  }
   
 `
 
@@ -20,12 +25,21 @@ const Wrapper = styled.div`
   display: flex;
   width: 70%;
   margin: 60px 90px;
+
+  @media screen and (max-width: 580px) {
+    flex-direction: column;
+   
+  }
   
   
 `
 
 const LeaveMsg = styled.div`
   width: 90%;
+
+  @media screen and (max-width: 580px) {
+   
+  }
 `
 
 const MsgTitle = styled.h1`
